@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Dictionary.css';
+import axios from "axios";
 
 export default function DictionaryFormHandler() {
 
@@ -7,12 +8,17 @@ export default function DictionaryFormHandler() {
 
     function search(event) {
         event.preventDefault();
-        alert(`We are searching ${searchWord}`);
+        let api = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
+        axios.get(api).then(handleReponse);
        
       }
 
     function updateSearchWord(event){
         setSearchWord(event.target.value);
+    }
+
+    function handleReponse(response){
+        console.log(response.data[0]);
     }
 
     return (
