@@ -11,7 +11,7 @@ export default function DictionaryFormHandler() {
     function search(event) {
         event.preventDefault();
         let api = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
-        axios.get(api).then(handleReponse);
+        axios.get(api).then(handleReponse).catch(handleError);
        
       }
 
@@ -21,6 +21,10 @@ export default function DictionaryFormHandler() {
 
     function handleReponse(response){
         setResponseData(response.data[0]);
+    }
+
+    function handleError(response){
+        setResponseData(null);
     }
 
     return (

@@ -2,7 +2,6 @@ import React from "react";
 import MeaningCard from "./meaning";
 
 export default function SearchResults(props){
-    console.log(props);
     if (props.results){
         return(
             <div className="SearchResults">

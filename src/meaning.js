@@ -10,10 +10,11 @@ export default function MeaningCard(props){
                                 return (
                                     <div className="definition" key={index}>
                                             <p>
-                                                {definition.definition}
+                                                <b>Definition - </b> {definition.definition}
                                                 <br />
-                                                <br />
-                                                {definition.example}
+                                              </p>
+                                            <p className="italics">
+                                               Example - {definition.example}
                                             </p>
                                     </div>
                                 )

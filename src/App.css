@@ -25,3 +25,7 @@
 .card {
   text-align: center;
 }
+
+.italics {
+  font-style: italic;
+}
