@@ -9,16 +9,18 @@ export default function MeaningCard(props){
                             {props.meaning.definitions.map(function(definition, index){
                                 return (
                                         <div class="card-body" key={index}>
-                                            <h5 class="card-title">{props.meaning.partOfSpeech}</h5>
+                                            <h4 class="strong">{props.meaning.partOfSpeech}</h4>
                                             <p class="card-text">
                                                 <b>Definition - </b> {definition.definition}
                                                 <br />
                                               </p>
+                                            <p className="strong">Example</p>
                                             <p className="italics">
-                                               Example - {definition.example}
+                                                {definition.example}
                                             </p>
+                                            <p className="strong">Synonyms</p>
                                             <div className="italics"> 
-                                            Synonyms are <Synonyms synonyms={definition.synonyms}/>
+                                            <Synonyms synonyms={definition.synonyms}/>
                                             </div>
                                         </div>
                                 )
