@@ -15,7 +15,7 @@
   text-align: center;
   font-family:  "Trebuchet MS";
   font-weight: 100;
-  background-color: #eae7dc;
+  background-color: #86B3D1;
 }
 
 .App-header {
@@ -42,8 +42,8 @@
 .card {
   border-radius: 30px;
   text-align: center;
-  background-color:#eae7dc;
-  color: #e98074;
+  background-color:#4d6d9a;
+  color: white;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -54,7 +54,7 @@
 
 .badge{
   color: white;
-  background-color: #e85a4f;
+  background-color: #e2677e;
   margin: 10px;
 }
 
