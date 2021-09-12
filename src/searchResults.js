@@ -4,7 +4,6 @@ import "./App.css";
 import Phonetic from "./phonetic";
 
 export default function SearchResults(props){
-    console.log(props);
     if (props.results){
         return(
             <div className="SearchResults">
