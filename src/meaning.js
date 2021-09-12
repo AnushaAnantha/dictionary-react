@@ -18,7 +18,6 @@ export default function MeaningCard(props){
                                             <p className="italics">
                                                 {definition.example}
                                             </p>
-                                            <p className="strong">Synonyms</p>
                                             <div className="italics"> 
                                             <Synonyms synonyms={definition.synonyms}/>
                                             </div>
