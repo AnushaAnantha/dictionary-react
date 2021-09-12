@@ -12,7 +12,7 @@ export default function ImageSearch(props) {
                             {props.photosData.data.photos.map(function(image, index){
                             return(
                                 <div className="col-4" key={index}>
-                                    <img key={index} src={image.src.landscape} alt="image" className="img-fluid" />
+                                    <img key={index} src={image.src.landscape} alt="pexels perfect" className="img-fluid" />
                                 </div>
                             )  
                             })}
