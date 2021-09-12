@@ -22,10 +22,29 @@
   width: 18rem;
 }
 
-.card {
-  text-align: center;
-}
-
 .italics {
   font-style: italic;
 }
+
+.SearchResults{
+  display: block;
+  padding-top: 25px;
+}
+
+.card {
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgb(0 0 0/ 10%);
+}
+
+.card-body {
+  width: 100%;
+}
+
+.badge{
+  color: white;
+  background-color: rgb(100 100 100);
+  margin: 10px;
+}
+
+
