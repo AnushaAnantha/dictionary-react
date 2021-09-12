@@ -11,9 +11,12 @@ export default function MeaningCard(props){
                                         <div class="card-body" key={index}>
                                             <h4 class="strong">{props.meaning.partOfSpeech}</h4>
                                             <p class="card-text">
-                                                <b>Definition - </b> {definition.definition}
+                                            <p className="strong">Definition</p>
+                                            <p className="italics">
+                                                {definition.definition}
                                                 <br />
-                                              </p>
+                                            </p>
+                                            </p>
                                             <p className="strong">Example</p>
                                             <p className="italics">
                                                 {definition.example}
