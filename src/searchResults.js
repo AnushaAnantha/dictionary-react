@@ -10,7 +10,7 @@ export default function SearchResults(props){
             <div className="SearchResults">
                 <div class="container">
                     <div class="span12">
-                    <div class="card border-light mb-3">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">{props.results.word}</h5>
                             {props.results.phonetics.map(function(phonetic, index){

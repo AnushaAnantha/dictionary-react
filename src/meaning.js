@@ -5,7 +5,7 @@ import './App.css';
 export default function MeaningCard(props){
     return (
 
-                       <div class="card border-light mb-3">
+                       <div class="card">
                             {props.meaning.definitions.map(function(definition, index){
                                 return (
                                         <div class="card-body" key={index}>
@@ -21,7 +21,7 @@ export default function MeaningCard(props){
                                             <p className="italics">
                                                 {definition.example}
                                             </p>
-                                            <div className="italics"> 
+                                            <div> 
                                             <Synonyms synonyms={definition.synonyms}/>
                                             </div>
                                         </div>

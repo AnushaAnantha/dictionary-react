@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import './Dictionary.css';
+import './App.css';
 import axios from "axios";
 import SearchResults from "./searchResults";
+import { MDBInput } from "mdbreact";
 
 export default function DictionaryFormHandler() {
 
@@ -28,13 +29,15 @@ export default function DictionaryFormHandler() {
     }
 
     return (
-        <div className="Dictionary">
-        <form onSubmit={search}>
-          <input type="search"  onChange={updateSearchWord} placeholder="Type your word here" autoFocus={true}/>
-          <input type="submit" value="Search" />
+      <div>
+        <div className="formClass">
+        <form>
+          <MDBInput size="sm" icon="user" hint="Search the dictionary" onChange={updateSearchWord}  autoFocus={true} />
+          <button class="btn btn-primary" type="submit" onClick={search}>Search</button>
         </form>
-        <SearchResults results={responseData}/>
         </div>
+        <SearchResults results={responseData}/>
+      </div>
     );
   }
   

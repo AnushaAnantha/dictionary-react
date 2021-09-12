@@ -8,7 +8,7 @@ export default function Synonyms(props){
                 <p className="strong">Synonyms</p>
                 {props.synonyms.map(function(synonym, index){
                     return (
-                    <span class="badge" key={index}>
+                    <span class="badge italics" key={index}>
                         {synonym}
                     </span>
                     )

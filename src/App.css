@@ -1,5 +1,8 @@
-.App-header {
-  margin: 50px 0;
+
+.formClass {
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .image-styling {
@@ -12,6 +15,11 @@
   text-align: center;
   font-family:  "Trebuchet MS";
   font-weight: 100;
+  background-color: #eae7dc;
+}
+
+.App-header {
+  margin-top: 10px;
 }
 
 #padding-top {
@@ -32,9 +40,12 @@
 }
 
 .card {
-  border-radius: 6px;
+  border-radius: 30px;
   text-align: center;
-  box-shadow: 0 5px 5px rgb(0 0 0/ 10%);
+  background-color:#eae7dc;
+  color: #e98074;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card-body {
@@ -43,9 +54,10 @@
 
 .badge{
   color: white;
-  background-color: rgb(100 100 100);
+  background-color: #e85a4f;
   margin: 10px;
 }
+
 
 .strong {
   font-weight: bold;

@@ -5,8 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <img src="https://www.cartoonistgroup.com/properties/grimmy/art_images/cg5c3bbd3fa7512.jpg"
-       className="image-styling" alt="cartoon"/>
+       <img src="https://image.flaticon.com/icons/png/512/817/817215.png" className="image-styling" alt="cartoon" width="200px" height="200px"/>
       </header>
         <main>
           <DictionaryFormHandler />
