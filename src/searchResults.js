@@ -1,6 +1,7 @@
 import React from "react";
 import MeaningCard from "./meaning";
 import "./App.css";
+import Phonetic from "./phonetic";
 
 export default function SearchResults(props){
     console.log(props);
@@ -12,12 +13,17 @@ export default function SearchResults(props){
                     <div class="card border-light mb-3">
                         <div class="card-body">
                             <h5 class="card-title">{props.results.word}</h5>
+                            {props.results.phonetics.map(function(phonetic, index){
+                                return(
+                                    <Phonetic phonetic={phonetic} key={index}/>
+                                )
+                            })} 
                             <p class="card-text"></p>
                         </div>
                     </div>
                         {props.results.meanings.map(function(meaning, index){
                             return (
-                            <MeaningCard meaning={meaning}/>
+                            <MeaningCard meaning={meaning} key={index}/>
                             )
                         })
                         }
