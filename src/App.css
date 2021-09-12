@@ -2,7 +2,7 @@
 .formClass {
   width: 15%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 20p;
 }
 
 .image-styling {
@@ -15,7 +15,7 @@
   text-align: center;
   font-family:  "Trebuchet MS";
   font-weight: 100;
-  background-color: #86B3D1;
+  background-color: #f5f4eb ;
 }
 
 .App-header {
@@ -39,10 +39,19 @@
   padding-top: 25px;
 }
 
+.typo {
+  font-weight: bolder;
+  font-size: 300%;
+  font-family: "Apple Chancery";
+  color :#434e3c;
+  padding-top: 50px;
+
+}
+
 .card {
   border-radius: 30px;
   text-align: center;
-  background-color:#4d6d9a;
+  background-color:#893667;
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -54,7 +63,7 @@
 
 .badge{
   color: white;
-  background-color: #e2677e;
+  background-color: rgb(136, 124, 101);
   margin: 10px;
 }
 

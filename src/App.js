@@ -4,9 +4,13 @@ import DictionaryFormHandler from './dictionary';
 export default function App() {
   return (
     <div className="App">
+    <div class="container">
+      <div class="span-12">
       <header className="App-header">
-       <img src="https://image.flaticon.com/icons/png/512/817/817215.png" className="image-styling" alt="cartoon" width="200px" height="200px"/>
+        <h1 className="typo">DICTIONARY</h1>
       </header>
+      </div>
+    </div>
         <main>
           <DictionaryFormHandler />
         </main>
